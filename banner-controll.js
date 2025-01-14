@@ -34,7 +34,7 @@ var cookieInfoText = ["Expiration", "Domain", "Controller"];
 
 var bannerShowingDelayed = 0;
 
-var websiteLogo = "https://www.gonnaorder.com/wp-content/uploads/2023/11/logo.svg";
+var websiteLogo = "#";
 
 var logoWidth = "50px";
 

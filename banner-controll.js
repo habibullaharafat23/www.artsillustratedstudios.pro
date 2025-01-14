@@ -34,7 +34,7 @@ var cookieInfoText = ["Expiration", "Domain", "Controller"];
 
 var bannerShowingDelayed = 0;
 
-var websiteLogo = "#";
+var websiteLogo = "https://www.artsillustratedstudios.pro/wp-content/uploads/2019/10/cropped-ais-black-on-white.png";
 
 var logoWidth = "50px";
 

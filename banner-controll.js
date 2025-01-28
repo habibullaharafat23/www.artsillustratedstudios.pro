@@ -38,7 +38,7 @@ var websiteLogo = "https://www.artsillustratedstudios.pro/wp-content/uploads/201
 
 var logoWidth = "50px";
 
-var darkModeEnable = true;
+var darkModeEnable = false;
 
 var darkModeDefault = localStorage.getItem("viewMode") ? localStorage.getItem("viewMode") : "light";
 

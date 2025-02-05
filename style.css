@@ -424,7 +424,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 0px;
 }
   
   /* Track */

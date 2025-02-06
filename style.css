@@ -639,7 +639,7 @@ div#dark svg {
     }
 
     :root{
-        --cookieHeadlineFontSize: 12px;
+        --cookieHeadlineFontSize: 16px;
         --cookieDescriptionFontSize: 10px;
         --cookieTotalFontSize: 10px;
         --noCookieFontSize: 13px;

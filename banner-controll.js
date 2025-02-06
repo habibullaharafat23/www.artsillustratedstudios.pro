@@ -7,7 +7,8 @@ var learnMoreText = "Learn more about the provider";
 
 var topSectionText = ["Consent", "Details", "About"];
 
-var firstSectionText = `<div style="display: inline-flex; align-items: center; flex-wrap: wrap;">We use cookies to enhance your experience on our site. By continuing to use our site, you consent to our use of cookies. <a href="https://www.artsillustratedstudios.pro/gdpr/" target="_blank" rel="noopener noreferrer" style="margin-left: 5px;">Privacy Policy</a>.</div>`;
+var firstSectionText = `We use cookies to enhance your experience on our site. By continuing to use our site, you consent to our use of cookies. <a href="https://www.artsillustratedstudios.pro/gdpr/" target="_blank" rel="noopener noreferrer" style="display: inline-block;">Privacy Policy</a>.`;
+
 
 
 

@@ -162,7 +162,7 @@
 
 /* handle content section hide and show */
 .bannerContentActive{
-    display: flex;
+    display: inline-block;
 }
 
 .bannerContentInactive{

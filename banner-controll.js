@@ -7,7 +7,7 @@ var learnMoreText = "Learn more about the provider";
 
 var topSectionText = ["Consent", "Details", "About"];
 
-var firstSectionText = `We use cookies to enhance your experience on our site. By continuing to use our site, you consent to our use of cookies. <a href="https://www.artsillustratedstudios.pro/gdpr/" target="_blank" rel="noopener noreferrer" style="display: inline-block; color: #366bf9;">Privacy Policy</a>.`;
+var firstSectionText = `We use cookies to enhance your experience on our site. By continuing to use our site, you consent to our use of cookies.<a href="https://www.artsillustratedstudios.pro/gdpr/" target="_blank" rel="noopener noreferrer" style="display: inline-block; color: #366bf9; margin: 0; padding: 0;">Privacy Policy</a>.`;
 
 
 

@@ -476,6 +476,16 @@
     cursor: pointer;
     fill: #edf0f600 !important;
     border: 2px solid #fefefe00 !important;
+   
+}
+/* Ensures the link stays on the same line */
+a {
+    white-space: nowrap;
+}
+
+/* Optional: Adds spacing so "Privacy Policy" doesn't stick to the text */
+a[href*="artsillustratedstudios.pro/gdpr"] {
+    margin-left: 5px;
 }
 
 .NoCookieWarning{

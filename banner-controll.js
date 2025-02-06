@@ -7,7 +7,10 @@ var learnMoreText = "Learn more about the provider";
 
 var topSectionText = ["Consent", "Details", "About"];
 
-var firstSectionText = 'We use cookies to enhance your experience on our site. By continuing to use our site, you consent to our use of cookies. <a href=" https://www.artsillustratedstudios.pro/gdpr/">Privacy Policy</a>';
+var firstSectionText = `We use cookies to enhance your experience on our site. By continuing to use our site, you consent to our use of cookies.<a href="https://www.artsillustratedstudios.pro/gdpr/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.`;
+
+
+
 
 var thirdSectionText = "Cookies are small text files that are used by websites to improve the user experience. The law states that we can store cookies on your device if they are strictly necessary for the operation of this website. For all other types of cookies, we need your permission. This means that cookies classified as necessary are managed according to Article 6(1)(f) of the GDPR. All other cookies, such as those in the Preferences and Marketing categories, are managed according to Article 6(1)(a) of the GDPR. This website uses different types of cookies. Some cookies are set by third-party services that appear on our pages.";
 

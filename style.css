@@ -450,7 +450,7 @@
     display: none;
     position: fixed;
     bottom: 10px;
-    left: 10px;
+    left: -1000px;
     background-color: var(--bannerColorWhite);
     border-radius: 50%;
     align-items: center;

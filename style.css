@@ -79,7 +79,7 @@
     font-family: var(--bannerFont);
     font-weight: var(--cookieDescriptionFontWeight) !important;
     line-height: var(--cookieDescriptionLineHeight) !important;
-    font-size: 13px !important;
+    font-size: 15px !important;
 }
 
 .mainCookieDescription{

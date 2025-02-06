@@ -7,7 +7,8 @@ var learnMoreText = "Learn more about the provider";
 
 var topSectionText = ["Consent", "Details", "About"];
 
-var firstSectionText = "We need your permission to use cookies to personalize content and ads, enable social media features, and analyze our website traffic. We also share information about your use of our site with our social media, advertising, and analytics partners.";
+var firstSectionText = 'We use cookies to enhance your experience on our site. By continuing to use our site, you consent to our use of cookies. <a href=" https://www.artsillustratedstudios.pro/gdpr/">Privacy Policy</a>';
+
 var thirdSectionText = "Cookies are small text files that are used by websites to improve the user experience. The law states that we can store cookies on your device if they are strictly necessary for the operation of this website. For all other types of cookies, we need your permission. This means that cookies classified as necessary are managed according to Article 6(1)(f) of the GDPR. All other cookies, such as those in the Preferences and Marketing categories, are managed according to Article 6(1)(a) of the GDPR. This website uses different types of cookies. Some cookies are set by third-party services that appear on our pages.";
 
 var bannerButtonsTexts = ["Accept", "Decline", "Customize", "Save"];
@@ -34,11 +35,11 @@ var cookieInfoText = ["Expiration", "Domain", "Controller"];
 
 var bannerShowingDelayed = 0;
 
-var websiteLogo = "https://www.artsillustratedstudios.pro/wp-content/uploads/2019/10/cropped-ais-black-on-white.png";
+var websiteLogo = "https://cdn.prod.website-files.com/601987b8e4fc3d2bd8810278/601995093c81388e4d7de4d1_Saint%20Lavie%20Logo.svg";
 
 var logoWidth = "50px";
 
-var darkModeEnable = false;
+var darkModeEnable = true;
 
 var darkModeDefault = localStorage.getItem("viewMode") ? localStorage.getItem("viewMode") : "light";
 
@@ -49,7 +50,7 @@ var defaultConsent = false;
 
 var onClickAccept = "granted";
 var onClickCustom = "normal";
-var onClickDeclined = "denied";
+var onClickDeclined = "granted";
 
 var onClickAcceptSecond = "granted";
 var onClickDeclinedSecond = "denied";
@@ -79,6 +80,7 @@ var consent = {
 	functionality_storage: defaultConsent ? "granted" : 'denied',
 	personalization_storage: defaultConsent ? "granted" : 'denied',
 	unclassified_storage: defaultConsent ? "granted" : 'denied',
+	security_storage: defaultConsent ? "granted" : 'granted'  // New security_storage field
 }
 
 var acceptConsent = {
@@ -89,6 +91,7 @@ var acceptConsent = {
 	functionality_storage: 'granted',
 	personalization_storage: 'granted',
 	unclassified_storage: 'granted',
+	security_storage: 'granted'  // New security_storage field
 }
 
 var declinedConsent = {
@@ -99,6 +102,7 @@ var declinedConsent = {
 	functionality_storage: 'denied',
 	personalization_storage: 'denied',
 	unclassified_storage: 'denied',
+	security_storage: 'granted'  // New security_storage field
 }
 
 gtag('consent', 'default', consent);
@@ -110,7 +114,6 @@ function pushDataLayer(consent, event) {
 	window.dataLayer.push({
 		event: event,
 		consent: consent,
-		setupBy: "https://www.fiverr.com/analyticsbyte"
 	})
 }
 
@@ -234,7 +237,20 @@ window.addEventListener("load", function() {
 
 		try {
 			const jsonCookies = await fetchCookies();
-			let matchedCookies = [];
+			let matchedCookies = [
+				{
+					"id": "SSID",
+					"platform": "Google",
+					"category": "Marketing",
+					"data_key": "SSID",
+					"domain": "https://mark-ryden.cz",
+					"description": "se specifickými funkcemi",
+					"retention_period": "2 years",
+					"data_controller": "Google",
+					"privary_rights_portals": "https://policies.google.com/privacy",
+					"wildcard_match": 0
+				  }
+			];
 
 			jsonCookies.forEach((jsonCookie) => {
 				if (websiteCookiePaths.includes(jsonCookie.data_key)) {
@@ -401,7 +417,7 @@ window.addEventListener("load", function() {
 
                         <div class="bannerBottomSectionWrapper">
                             <button id="consentAccept" class="active consentAccept"></button>
-                            <button id="consentReject" class="consentReject"></button>
+                             <button id="consentReject" class="consentReject"></button>
                             <button id="consentCustom" class="consentCustom"></button>
                         </div>
         `
